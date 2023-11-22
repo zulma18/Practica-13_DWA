@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*Estilos para la reticula*/
+        .contenedor-reticula{
+            /*Mostrar un diseño en reticula, necesario para que todo funcione con grid*/
+            display: grid;
+
+            /*definir el ancho proporcional de las columnas*/
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /*Espacio entre las celdas de la reticula*/
+            grid-gap: 10px;
+
+            /*Definir las areas de la reticula header ocupara dos espacios de las tres columnas tanto en la fila 1 como en la 2 y slideber un espacio en la primer fila, main un espacio en la segunda fila */
+            grid-template-areas:
+            "header header sidebar"
+            "header header main";
+        }
+
+        /* Estilo para los elementos*/
+        .elemento {
+            /*Agregar espacios internos alrededor del contenido */
+            padding: 20px;
+            /*Agregar un borde alrededor del contenido*/
+            border: 1px solid #ccc;
+            /*alinear el contenido al centro*/
+            text-align: center;
+        }
+
+        /*Asignar areas a los elementos */
+        .elemento1 {
+            /*Asignar el area "header" al elemento */
+            grid-area: header;
+        }
+
+        .elemento2{
+            /*Asignar el area "main" al elemento */
+            grid-area: main;
+        }
+
+        .elemento3 {
+            /*Asignar el area "sidebar" al elemento*/
+            grid-area: sidebar;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-reticula">
+        <div class="elemento elemento1">Encabezado</div>
+        <div class="elemento elemento2">Contenido Principal</div>
+        <div class="elemento elemento3">Barra Latral</div>
+    </div>
+</body>
+</html>

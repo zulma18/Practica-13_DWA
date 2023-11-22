@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos para la retícula */
+    .contenedorp-reticula {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      grid-gap: 20px;
+      grid-template-areas:
+        "encabezado encabezado encabezado"
+        "contenido barra-lateral barra-lateral";
+    }
+
+    /* Estilos para los elementos */
+    .elemento {
+      padding: 20px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    /* Asignar áreas a los elementos usando grid-area */
+    .encabezado {
+      grid-area: encabezado;
+    }
+
+    .contenido {
+      grid-area: contenido;
+    }
+
+    .barra-lateral {
+      grid-area: barra-lateral;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedorp-reticula">
+    <div class="elemento encabezado">Encabezado</div>
+    <div class="elemento contenido">Contenido Principal</div>
+    <div class="elemento barra-lateral">Barra Lateral</div>
+  </div>
+</body>
+</html>
