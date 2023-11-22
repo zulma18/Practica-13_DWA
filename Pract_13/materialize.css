@@ -1,0 +1,130 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    background-color: #ff8a80;
+    padding: 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-trigger:hover .dropdown-content {
+    display: block;
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(48, 88, 7);
+}
+
+.container {
+    margin: 20px;
+    margin: auto;
+}
+
+thead.lime-text {
+    background-color: rgb(183, 219, 51);
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+tbody.green-text {
+    background-color: rgb(250, 139, 129);
+    color: rgb(10, 20, 10);
+    text-align: center;
+    border: 2px solid #000;
+}
+
+table.highlight {
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    text-align: center;
+    border: 2px solid #000;
+    line-height: 2.0;
+}
+
+table.centered {
+    margin: auto;
+    width: 100%;
+}
+
+.container.center {
+    text-align: center;
+    margin: 20px;
+    margin: auto;
+}
+
+button.btn {
+    background-color: rgb(183, 219, 51);
+    color: green;
+    padding: 12px 20px;
+    margin: 5px;
+    border: 2px solid #000;
+}
+
+a.btn {
+    background-color: rgb(250, 139, 129);
+    color: rgb(85, 112, 10);
+    padding: 16px 20px;
+    margin: 10px;
+    border: 2px solid #000;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.page-footer {
+    background-color: rgb(250, 139, 129);
+    color: #4b4121;
+    margin: auto;
+}
+
+.page-footer a {
+    color: #080606;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.row {
+    margin-bottom: 1;
+}
+
+.footer-copyright {
+    background-color:  #222;
+    color: #ccc;
+    padding: 10px 0;
+}
